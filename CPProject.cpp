@@ -72,7 +72,7 @@ void add(int rollnum)
 
 	//Making a file and writing to it.
 	int number=rollnum;
-	string rolli;
+	string rolli; //int to string using library cstudio
 	stringstream convert;
 	convert << number;
 	rolli = convert.str();
