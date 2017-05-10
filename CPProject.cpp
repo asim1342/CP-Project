@@ -75,9 +75,9 @@ void add(int rollnum)
 	stringstream convert;
 	convert << number;
 	rolli = convert.str();
-    rolli += ".txt"; // important to create .txt file.
-    ofstream database;
-    database.open(rolli.c_str(), ios::app);
+    	rolli += ".txt"; // important to create .txt file.
+    	ofstream database;
+    	database.open(rolli.c_str(), ios::app);
 
 	int temp2;
 	database <<name[0]<<endl<<name[1]<<endl<<dob[0]<<endl<<dob[1];
@@ -103,7 +103,7 @@ void display()
 	//Reading from the database file.
 	cout<<"Enter roll number."<<endl;
 	string rollnum; cin>>rollnum;
-    rollnum += ".txt";
+    	rollnum += ".txt";
 
 	ifstream database (rollnum.c_str(), ios::app);
 	if (database.is_open())
@@ -232,11 +232,11 @@ void edit()
 	convert << number;
 	rolli = convert.str();
 
-    // remove( rolli, ios::in ); Insert remove function
+    	// remove( rolli, ios::in ); Insert remove function
 
 
-    ofstream database;
-    database.open(rolli.c_str(), ios::app);
+    	ofstream database;
+    	database.open(rolli.c_str(), ios::app);
 
 	int temp2;
 	database <<name[0]<<endl<<name[1]<<endl<<dob[0]<<endl<<dob[1];
